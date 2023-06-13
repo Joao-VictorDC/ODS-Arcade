@@ -1,0 +1,91 @@
+:root {
+    --navcolor: #000000;
+    --game-section-color: #d8d8d8;
+    --font-color: #000000;
+}
+
+* {
+    background-color: purple;
+    /* margin:0;
+    padding:0;
+    border:0; */
+    color: #ffffff;
+}
+
+.main {
+    margin:auto;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap:0.5rem;
+}
+
+.main-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.game-section {
+    background-color: var(--game-section-color);
+    width: 35rem;
+    height: 20.5rem;
+    filter: drop-shadow(8px 8px 4px rgba(0, 0, 0, 0.25));
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h2, p {
+    color: var(--font-color);
+    background-color: var(--game-section-color);
+    padding: 0;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: regular;
+    font-size: 2rem;
+}
+
+.game-play {
+    padding-top: 1rem;
+    background-color: var(--game-section-color);
+    display: flex;
+    flex-direction: row;
+}
+
+.play-button {  
+    background-color: var(--game-section-color);
+    width: 3rem;
+    height: 3rem;
+}
+
+.play-button:hover {
+    cursor: pointer;
+}
+
+.help {
+    background-color: var(--game-section-color);
+    margin:0;
+    padding: 0;
+    background-color: none;
+    position: relative;
+    left: 12rem;
+}
+
+.help:hover {
+    cursor: pointer;
+}
+
+.game-image {
+    background-color: var(--game-section-color);
+    padding: 0 .5rem;
+    width: 75%;
+    height: 50%;
+    size: .5px;
+}
